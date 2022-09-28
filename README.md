@@ -51,4 +51,8 @@ Options:
 
 The script will install any keywords in the YAML that do not already exist in the `Web Data` database. If you want to add these to be added, either adjust modify the keyword so that it is unique, or delete the existing keyword from your chrome search engines [here](chrome://settings/searchEngines).
 
+### You have to restart chrome
+
+_On Windows, Chrome needs to be closed while the script runs_ otherwise you will encounter an error when the script tries to swap out the Web Data sqlite database.
+
 For the newly added keywords to be visible in chrome, you must relaunch Chrome so that it reloads the SQLite database. I recommend enabling the "Continue where you left off" [Startup Option](chrome://settings/onStartup) in Chrome so that your tabs recover after you restart the browser.

@@ -16,13 +16,14 @@ DEFAULT_CHROME_PATHS = {
     'linux': ['~/.config/google-chrome/']
 }
 
-TMP_WEB_DATA_PATH = '~/.tmp_web_data'
+TMP_WEB_DATA_PATH = os.path.join('%USERPROFILE%',
+                                 '.tmp_web_data') if sys.platform == 'win32' else os.path.join(
+                                     '~', '.tmp_web_data')
 
 
 def copy_file(src: str, dst: str) -> None:
     logging.info("Copying %s to %s", src, dst)
     shutil.copyfile(expand_path(src), expand_path(dst))
-    os.sync()
 
 
 def rm_file(path: str) -> None:
@@ -31,7 +32,7 @@ def rm_file(path: str) -> None:
 
 
 def expand_path(path: str) -> str:
-    return os.path.abspath(os.path.normpath(os.path.expanduser(path)))
+    return os.path.abspath(os.path.normpath(os.path.expanduser(os.path.expandvars(path))))
 
 
 def check_keyword_exists(con: sqlite3.Cursor, keyword: str) -> bool:
@@ -74,7 +75,7 @@ def install_search_engines(target: str, engines: list = None) -> bool:
 
 def read_search_engines(path: str) -> list:
     logging.info("Loading search engines from %s", path)
-    return yaml.safe_load(open(expand_path(path), 'r'))
+    return yaml.safe_load(open(expand_path(path), 'rb'))
 
 
 def get_chrome_profile_paths() -> list:
