@@ -1,0 +1,6 @@
+- name: VirusTotal
+  keyword: vt
+  url: https://www.virustotal.com/gui/search/%s
+- name: Virustotal UI
+  keyword: vtui
+  url: https://www.virustotal.com
