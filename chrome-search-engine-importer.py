@@ -60,7 +60,7 @@ def install_search_engines(target: str, engines: list = None) -> bool:
             )
             con.execute(
                 'INSERT INTO keywords(short_name, keyword, url, favicon_url) values (?, ?, ?, "");',
-                [name, keyword, url])
+                [name, keyword, url.replace('%s', '{searchTerms}')])
             con.commit()
         else:
             logging.info(
