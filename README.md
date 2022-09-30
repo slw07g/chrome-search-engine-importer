@@ -1,6 +1,6 @@
 # Chrome Search Engine Importer
 
-[![Publish to Test PyPI](https://github.com/slw07g/chrome-search-engine-importer/actions/workflows/pypi-release.yml/badge.svg?event=release)](https://github.com/slw07g/chrome-search-engine-importer/actions/workflows/pypi-release.yml)
+[![Publish to PyPI](https://github.com/slw07g/chrome-search-engine-importer/actions/workflows/pypi-release.yml/badge.svg)](https://github.com/slw07g/chrome-search-engine-importer/actions/workflows/pypi-release.yml)
 
 Custom Search Engines in chrome can make searching for things in private/internal systems a lot more efficient and easier, so long as those systems allow you to input the search string in the URI.
 
