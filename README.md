@@ -4,7 +4,7 @@ Custom Search Engines in chrome can make searching for things in private/interna
 
 Custom Search Engines can also function as keyword shortcuts to URLs, if you don't wish to fumble around with your bookmarks and would rather type in a keyword in the search bar + <Enter> to take you to where you are trying to go.
 
-However, when you collaborate with other people who often use the same systems that you do, it can be helpful to share these custom search gines with one another. The https://zapier.com/blog/add-search-engine-to-chrome/ for adding custom search engines does not scale well when you need to share a lot of them. Thus, the need for this script to make that manual process easier and the framework of defining custom search engine keywords as YAML files.
+However, when you collaborate with other people who often use the same systems that you do, it can be helpful to share these custom search gines with one another. The [manual method](https://zapier.com/blog/add-search-engine-to-chrome/) for adding custom search engines does not scale well when you need to share a lot of them. Thus, the need for this script to make that manual process easier and the framework of defining custom search engine keywords as YAML files.
 
 # How does it work?
 

@@ -1,0 +1,29 @@
+[build-system]
+requires = [
+  "setuptools>=61.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chrome-search-engine-importer"
+version = "0.1.2"
+authors = [
+  { name="Shanief Webb", email="li44arfh@duck.com" },
+]
+description = "A tool to import chrome search engines (keywords)."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+  "click>=8.0.3",
+  "inquirer>=2.10.0",
+  "pyyaml>=6.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/slw07g/chrome-search-engine-importer"
+"Bug Tracker" = "https://github.com/slw07g/chrome-search-engine-importer/issues"
