@@ -1,7 +1,8 @@
 name: Publish to Test PyPI
 on:
-  release:
-    types: [published]
+  pull_request:
+    branches:
+      - main
 jobs:
   pypi:
     runs-on: ubuntu-latest
