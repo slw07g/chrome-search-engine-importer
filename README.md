@@ -1,5 +1,7 @@
 # Chrome Search Engine Importer
 
+[![Publish to Test PyPI](https://github.com/slw07g/chrome-search-engine-importer/actions/workflows/pypi-release.yml/badge.svg?event=release)](https://github.com/slw07g/chrome-search-engine-importer/actions/workflows/pypi-release.yml)
+
 Custom Search Engines in chrome can make searching for things in private/internal systems a lot more efficient and easier, so long as those systems allow you to input the search string in the URI.
 
 Custom Search Engines can also function as keyword shortcuts to URLs, if you don't wish to fumble around with your bookmarks and would rather type in a keyword in the search bar + <Enter> to take you to where you are trying to go.
